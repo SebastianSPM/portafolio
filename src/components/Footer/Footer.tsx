@@ -10,35 +10,30 @@ function Footer() {
         <footer className="footer">
 
             <ul className="footer-list">
-
                 <li>
-                    <a href="#">
+                    <a href="https://github.com/SebastianSPM">
                         <img src={githubIcon} alt="Github" />
                         <span>Github</span>
                     </a>
                 </li>
-
                 <li>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/sebastians-pereira-maldonado-/">
                         <img src={linkedinIcon} alt="LinkedIn" />
                         <span>LinkedIn</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="#">
                         <img src={instagramIcon} alt="Instagram" />
                         <span>Instagram</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="#">
                         <img src={twitterIcon} alt="Twitter" />
                         <span>Twitter</span>
                     </a>
                 </li>
-
             </ul>
 
         </footer>
