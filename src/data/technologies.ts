@@ -9,56 +9,56 @@ export const technologies: Technology[] = [
     {
         id:2,
         name: "CSS",
-        image: "/assets/images/css.png"
+        image: "src/assets/Tech/CSS.svg"
     },
     {
         id:3,
         name: "JavaScript",
-        image: "/assets/images/javascript.png"
+        image: "src/assets/Tech/javascript.png"
     },
     {
         id:4,
         name: "React",
-        image: "/assets/images/react.png"
+        image: "src/assets/Tech/React.svg"
     },
     {
         id:5,
         name: "Node.js",
-        image: "/assets/images/node.png"
+        image: "src/assets/Tech/node.js.svg"
     },
     {
         id:6,
         name: "Python",
-        image: "/assets/images/python.png"
+        image: "src/assets/Tech/python.svg"
     },
     {
         id:7,
         name: "Java",
-        image: "/assets/images/java.png"
+        image: "src/assets/Tech/java.svg"
     },
     {
         id:8,
         name: "Bootstrap",
-        image: "/assets/images/bootstrap.png"
+        image: "src/assets/Tech/Bootstrap.svg"
     },
     {
         id:9,
         name: "Next.js",
-        image: "/assets/images/nextjs.png"
+        image: "src/assets/Tech/nextjs.svg"
     },
     {
         id: 10,
         name: "Spring Boot",
-        image: "/assets/images/spring-boot.png"
+        image: "src/assets/Tech/spring_boot.svg"
     },
     {
         id: 11,
         name: "TypeScript",
-        image: "/assets/images/typescript.png"
+        image: "src/assets/Tech/Typescript.svg"
     },
     {
         id:12,
         name: "PostgreSQL",
-        image: "/assets/images/postgresql.png"
+        image: "src/assets/Tech/postgresql.svg"
     }
 ];
