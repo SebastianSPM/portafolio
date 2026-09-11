@@ -1,7 +1,7 @@
 import "./Footer.css";
 
 import githubIcon from "../../assets/Footer/gitHub.svg";
-import linkedinIcon from "../../assets/Footer/linkedin.png";
+import linkedinIcon from "../../assets/linkedIn.png";
 import instagramIcon from "../../assets/Footer/instagram.svg";
 import twitterIcon from "../../assets/Footer/twitter.svg";
 
