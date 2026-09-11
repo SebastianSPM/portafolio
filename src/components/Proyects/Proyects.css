@@ -1,0 +1,30 @@
+.projects-section {
+    min-height: 50vh;
+    margin-top: 200px;
+    background-color: #EBEBEB;
+
+    padding: 50px 40px;
+}
+
+.projects-section h2 {
+    font-family: "Open Sans", sans-serif;
+
+    font-size: 54px;
+    font-weight: 600;
+
+    text-align: center;
+
+    margin: 0 0 50px;
+}
+
+.projects-container {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
