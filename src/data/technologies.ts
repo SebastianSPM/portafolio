@@ -1,64 +1,77 @@
 import type { Technology } from "../components/Technology/Technology.types.ts";
 
+import html from "../assets/Tech/HTML5.webp";
+import css from "../assets/Tech/CSS.svg";
+import javascript from "../assets/Tech/javascript.png";
+import react from "../assets/Tech/React.svg";
+import node from "../assets/Tech/node.js.svg";
+import python from "../assets/Tech/python.svg";
+import java from "../assets/Tech/java.svg";
+import bootstrap from "../assets/Tech/Bootstrap.svg";
+import nextjs from "../assets/Tech/nextjs.svg";
+import springBoot from "../assets/Tech/spring_boot.svg";
+import typescript from "../assets/Tech/Typescript.svg";
+import postgresql from "../assets/Tech/postgresql.svg";
+
 export const technologies: Technology[] = [
     {
         id: 1,
         name: "HTML",
-        image: "src/assets/Tech/HTML5.webp"
+        image: html
     },
     {
-        id:2,
+        id: 2,
         name: "CSS",
-        image: "src/assets/Tech/CSS.svg"
+        image: css
     },
     {
-        id:3,
+        id: 3,
         name: "JavaScript",
-        image: "src/assets/Tech/javascript.png"
+        image: javascript
     },
     {
-        id:4,
+        id: 4,
         name: "React",
-        image: "src/assets/Tech/React.svg"
+        image: react
     },
     {
-        id:5,
+        id: 5,
         name: "Node.js",
-        image: "src/assets/Tech/node.js.svg"
+        image: node
     },
     {
-        id:6,
+        id: 6,
         name: "Python",
-        image: "src/assets/Tech/python.svg"
+        image: python
     },
     {
-        id:7,
+        id: 7,
         name: "Java",
-        image: "src/assets/Tech/java.svg"
+        image: java
     },
     {
-        id:8,
+        id: 8,
         name: "Bootstrap",
-        image: "src/assets/Tech/Bootstrap.svg"
+        image: bootstrap
     },
     {
-        id:9,
+        id: 9,
         name: "Next.js",
-        image: "src/assets/Tech/nextjs.svg"
+        image: nextjs
     },
     {
         id: 10,
         name: "Spring Boot",
-        image: "src/assets/Tech/spring_boot.svg"
+        image: springBoot
     },
     {
         id: 11,
         name: "TypeScript",
-        image: "src/assets/Tech/Typescript.svg"
+        image: typescript
     },
     {
-        id:12,
+        id: 12,
         name: "PostgreSQL",
-        image: "src/assets/Tech/postgresql.svg"
+        image: postgresql
     }
 ];
