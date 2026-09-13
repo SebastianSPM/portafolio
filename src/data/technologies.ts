@@ -2,9 +2,9 @@ import type { Technology } from "../components/Technology/Technology.types.ts";
 
 import html from "../assets/Tech/HTML5.webp";
 import css from "../assets/Tech/CSS.svg";
-import javascript from "../assets/Tech/javascript.png";
+import javascript from "../assets/Tech/Javascript.png";
 import react from "../assets/Tech/React.svg";
-import node from "../assets/Tech/node.js.svg";
+import node from "../assets/Tech/node.svg";
 import python from "../assets/Tech/python.svg";
 import java from "../assets/Tech/java.svg";
 import bootstrap from "../assets/Tech/Bootstrap.svg";
