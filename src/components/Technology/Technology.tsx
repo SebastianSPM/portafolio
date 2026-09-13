@@ -1,18 +1,18 @@
 //import { technologies } from "../../data/technologies.ts";
 import "./Technology.css";
 
-import html from "../../assets/Tech/html.webp";
-import css from "../../assets/Tech/css.svg";
-import javascript from "../../assets/Tech/js.png";
-import react from "../../assets/Tech/react.svg";
-import node from "../../assets/Tech/node.svg";
-import python from "../../assets/Tech/python.svg";
-import java from "../../assets/Tech/java.svg";
-import bootstrap from "../../assets/Tech/bootstrap.svg";
-import nextjs from "../../assets/Tech/nextjs.svg";
-import springBoot from "../../assets/Tech/springboot.svg";
-import typescript from "../../assets/Tech/typescript.svg";
-import postgresql from "../../assets/Tech/postgresql.svg";
+import html from "../../assets/Tech/h1.webp";
+import css from "../../assets/Tech/c1.svg";
+import javascript from "../../assets/Tech/js1.png";
+import react from "../../assets/Tech/r1.svg";
+import node from "../../assets/Tech/no1.svg";
+import python from "../../assets/Tech/py1.svg";
+import java from "../../assets/Tech/j1.svg";
+import bootstrap from "../../assets/Tech/b1.svg";
+import nextjs from "../../assets/Tech/n1.svg";
+import springBoot from "../../assets/Tech/s1.svg";
+import typescript from "../../assets/Tech/t1.svg";
+import postgresql from "../../assets/Tech/p1.svg";
 
 interface Technology {
     id: number;
