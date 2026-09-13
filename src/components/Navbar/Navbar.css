@@ -22,3 +22,39 @@
     list-style: none;
     justify-content: center;
 }
+
+.navbar li {
+    position: relative;
+    padding: 5px 10px;
+}
+
+.navbar li::before,
+.navbar li::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: 1px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar li::before {
+    top: 0;
+    transform-origin: left;
+}
+
+.navbar li::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+.navbar li:hover::before {
+    transform: scaleX(1);
+}
+
+.navbar li:hover::after {
+    transform: scaleX(1);
+    transition-delay: 0.2s;
+}

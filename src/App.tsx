@@ -1,4 +1,3 @@
-import './App.css'
 import AboutMe from './components/AboutMe/AboutMe'
 import Footer from './components/Footer/Footer'
 import HeroSection from './components/HeroSection/HeroSection'
@@ -11,10 +10,12 @@ function App() {
   return (
     <>
       <HeroSection />
-      <AboutMe />
-      <Technology />
-      <Proyects />
-      <Contact />
+      <main>
+        <AboutMe />
+        <Technology />
+        <Proyects />
+        <Contact />
+      </main>
       <Footer />
     </>
   )

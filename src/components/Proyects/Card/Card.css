@@ -1,19 +1,14 @@
 .project-card {
     background-color: #FFFFFF;
-
     border-radius: 10px;
-
     overflow: hidden;
-
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .project-card-image {
     width: 100%;
     height: 220px;
-
     object-fit: cover;
-
     display: block;
 }
 
@@ -23,37 +18,80 @@
 
 .project-card-content h3 {
     font-family: "Open Sans", sans-serif;
-
     font-size: 24px;
     font-weight: 600;
-
     margin: 0 0 10px;
 }
 
 .project-card-content p {
     font-family: "Open Sans", sans-serif;
-
     font-size: 16px;
     font-weight: 400;
-
     margin: 0 0 15px;
 }
 
 .project-card-technologies {
     display: flex;
     flex-wrap: wrap;
-
     gap: 8px;
 }
 
 .project-card-technologies span {
     font-family: "Open Sans", sans-serif;
-
     font-size: 14px;
-
     padding: 5px 10px;
-
     border-radius: 6px;
-
     background-color: #EBEBEB;
+}
+
+.project-card-image-container {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.project-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card-image-container:hover .project-card-overlay {
+    opacity: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+.project-card-overlay button {
+    align-self: center;
+    margin-top: 5px;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 6px;
+    color: #1a1a1a;
+    background-color: #dddddd;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translateY(10px);
+    transition: transform 0.3s ease;
+}
+
+.project-card-image-container:hover .project-card-overlay button {
+    transform: translateY(0);
 }

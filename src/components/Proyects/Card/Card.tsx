@@ -1,3 +1,4 @@
+import Button from "../../Button/Button";
 import type { Project } from "../Proyects.types";
 import "./Card.css";
 
@@ -9,11 +10,17 @@ function ProjectCard({ project }: ProjectCardProps) {
     return (
         <article className="project-card">
 
-            <img
-                src={project.image}
-                alt={project.name}
-                className="project-card-image"
-            />
+            <div className="project-card-image-container">
+                <img
+                    src={project.image}
+                    alt={project.name}
+                    className="project-card-image"
+                />
+
+                <a href={project.url} className="project-card-overlay">
+                    <Button text="Ver proyecto" />
+                </a>
+            </div>
 
             <div className="project-card-content">
 

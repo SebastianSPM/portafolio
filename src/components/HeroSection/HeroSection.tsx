@@ -4,7 +4,7 @@ import "./HeroSection.css";
 
 function HeroSection() {
     return (
-        <section className="hero-section">
+        <section id="HeroSection" className="hero-section">
             <Navbar />
             <Hero />
         </section>

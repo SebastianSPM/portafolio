@@ -9,14 +9,16 @@ export const projects: Project[] = [
         name: "Cancheros",
         description: "Sistema de reservas de canchas",
         image: cancha,
-        technologies: ["HTML", "CSS", "JavaScript", "Spring Boot", "PostgreSQL"]
+        technologies: ["HTML", "CSS", "JavaScript", "Spring Boot", "PostgreSQL"],
+        url: "https://cancheros-proyecto.vercel.app/index.html"
     },
     {
         id: 2,
         name: "Task Manager",
         description: "Gestor de tareas",
         image: tareas,
-        technologies: ["HTML","JavaScript", "CSS", "Spring Boot", "PostgreSQL"]
+        technologies: ["HTML","JavaScript", "CSS", "Spring Boot", "PostgreSQL"],
+        url: "https://sebastianspm.github.io/Planificador_tareas/"
     },
     {
         id: 3,
@@ -30,6 +32,7 @@ export const projects: Project[] = [
                         "SQLite",
                         "bcryptjs",
                         "Node.js"
-                    ]
+                    ],
+        url: "https://sistema-registro-login-git-9ef51c-sebastians-projects-8e04f1fa.vercel.app/"
     }
 ];

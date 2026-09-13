@@ -4,9 +4,9 @@ import "./Proyects.css";
 
 function Proyects() {
     return (
-        <section className="projects-section">
+        <section id="Proyects" className="projects-section">
 
-            <h2>Projects</h2>
+            <h2>Proyectos</h2>
 
             <div className="projects-container">
 

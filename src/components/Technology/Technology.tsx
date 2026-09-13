@@ -1,11 +1,12 @@
 import { technologies } from "../../data/technologies.ts";
+import type { CSSProperties } from "react";
 import "./Technology.css";
 
 function Technology() {
     return (
-        <section className="technology-section">
+        <section id="Technology" className="technology-section">
 
-            <h2>Technology</h2>
+            <h2>Tecnologia</h2>
 
             <div className="technology-content">
                 <div className="technology-container">
@@ -13,6 +14,9 @@ function Technology() {
                         <div
                             className="technology-card"
                             key={technology.id}
+                            style={{
+                                "--technology-color": technology.color
+                            } as CSSProperties}
                         >
                             <img
                                 src={technology.image}

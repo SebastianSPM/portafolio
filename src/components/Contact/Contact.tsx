@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Swal from 'sweetalert2'
-import Button from "../Button";
+import Button from "../Button/Button";
 import "./Contact.css";
 
 function Contact() {
@@ -14,7 +14,7 @@ function Contact() {
     !email.trim() ||
     !message.trim();
 
-    const submit = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    const submit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         if (formIncomplete) {
@@ -78,16 +78,17 @@ function Contact() {
     };
 
     return (
-        <section className="contact-section">
+        <section id="Contact" className="contact-section">
 
-            <h2>Contact</h2>
+            <h2>Contacto</h2>
 
-            <form className="contact-form">
+            <form className="contact-form" onSubmit={submit}>
 
                 <div>
                     <input
                         type="text"
                         placeholder="Name"
+                        onChange={(e) => setName(e.target.value)}
                     />
                 </div>
 
@@ -95,17 +96,19 @@ function Contact() {
                     <input
                         type="email"
                         placeholder="Email"
+                        onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
 
                 <div>
-                    <textarea placeholder="Message"></textarea>
+                    <textarea placeholder="Message"
+                    onChange={(e) => setMessage(e.target.value)}
+                    ></textarea>
                 </div>
 
                 <Button
                     text={sending ? "Sending..." : "Send"}
-                    onClick={submit}
-                    disabled={formIncomplete || sending}
+                    disabled={sending}
                 />
 
             </form>

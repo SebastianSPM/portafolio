@@ -2,8 +2,8 @@ import "./AboutMe.css";
 
 function AboutMe() {
   return (
-    <section className="about-me">
-      <h2>About me</h2>
+    <section id="AboutMe" className="about-me">
+      <h2>Acerca de mi</h2>
 
       <p>
         Desarrollador Fullstack, con formación en desarrollo de software y

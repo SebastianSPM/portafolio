@@ -17,61 +17,73 @@ export const technologies: Technology[] = [
     {
         id: 1,
         name: "HTML",
-        image: html
+        image: html,
+        color: "#FF4500"
     },
     {
         id: 2,
         name: "CSS",
-        image: css
+        image: css,
+        color: "#663399"
     },
     {
         id: 3,
         name: "JavaScript",
-        image: javascript
+        image: javascript,
+        color: "#F7DF1E"
     },
     {
         id: 4,
         name: "React",
-        image: react
+        image: react,
+        color: "#61DAFB"
     },
     {
         id: 5,
         name: "Node.js",
-        image: node
+        image: node,
+        color: "#008000"
     },
     {
         id: 6,
         name: "Python",
-        image: python
+        image: python,
+        color: "#4682B4"
     },
     {
         id: 7,
         name: "Java",
-        image: java
+        image: java,
+        color: "#F89820"
     },
     {
         id: 8,
         name: "Bootstrap",
-        image: bootstrap
+        image: bootstrap,
+        color: "#663399"
     },
     {
         id: 9,
         name: "Next.js",
-        image: nextjs
+        image: nextjs,
+        color: "#201e1e"
     },
     {
         id: 10,
         name: "Spring Boot",
-        image: springBoot
+        image: springBoot,
+        color: "#6DB33F"
     },
     {
         id: 11,
         name: "TypeScript",
-        image: typescript
+        image: typescript,
+        color: "#4169E1"
     },
     {
         id: 12,
         name: "PostgreSQL",
-        image: postgresql
+        image: postgresql,
+        color: "#4169E1"
     }
 ];
