@@ -1,26 +1,26 @@
 //import { technologies } from "../../data/technologies.ts";
 import "./Technology.css";
 
-import html from "../assets/Tech/html.webp";
-import css from "../assets/Tech/css.svg";
-import javascript from "../assets/Tech/js.png";
-import react from "../assets/Tech/react.svg";
-import node from "../assets/Tech/node.svg";
-import python from "../assets/Tech/python.svg";
-import java from "../assets/Tech/java.svg";
-import bootstrap from "../assets/Tech/bootstrap.svg";
-import nextjs from "../assets/Tech/nextjs.svg";
-import springBoot from "../assets/Tech/springboot.svg";
-import typescript from "../assets/Tech/typescript.svg";
-import postgresql from "../assets/Tech/postgresql.svg";
+import html from "../../assets/Tech/html.webp";
+import css from "../../assets/Tech/css.svg";
+import javascript from "../../assets/Tech/js.png";
+import react from "../../assets/Tech/react.svg";
+import node from "../../assets/Tech/node.svg";
+import python from "../../assets/Tech/python.svg";
+import java from "../../assets/Tech/java.svg";
+import bootstrap from "../../assets/Tech/bootstrap.svg";
+import nextjs from "../../assets/Tech/nextjs.svg";
+import springBoot from "../../assets/Tech/springboot.svg";
+import typescript from "../../assets/Tech/typescript.svg";
+import postgresql from "../../assets/Tech/postgresql.svg";
 
-export interface Technology {
+interface Technology {
     id: number;
     name: string;
     image: string;
 }
 
-export const technologies: Technology[] = [
+const technologies: Technology[] = [
     {
         id: 1,
         name: "HTML",
