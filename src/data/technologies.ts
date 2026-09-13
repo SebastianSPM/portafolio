@@ -1,16 +1,16 @@
 import type { Technology } from "../components/Technology/Technology.types.ts";
 
-import html from "../assets/Tech/HTML5.webp";
-import css from "../assets/Tech/CSS.svg";
-import javascript from "../assets/Tech/Javascript.png";
-import react from "../assets/Tech/React.svg";
+import html from "../assets/Tech/html.webp";
+import css from "../assets/Tech/css.svg";
+import javascript from "../assets/Tech/js.png";
+import react from "../assets/Tech/react.svg";
 import node from "../assets/Tech/node.svg";
 import python from "../assets/Tech/python.svg";
 import java from "../assets/Tech/java.svg";
-import bootstrap from "../assets/Tech/Bootstrap.svg";
+import bootstrap from "../assets/Tech/bootstrap.svg";
 import nextjs from "../assets/Tech/nextjs.svg";
-import springBoot from "../assets/Tech/spring_boot.svg";
-import typescript from "../assets/Tech/Typescript.svg";
+import springBoot from "../assets/Tech/springboot.svg";
+import typescript from "../assets/Tech/typescript.svg";
 import postgresql from "../assets/Tech/postgresql.svg";
 
 export const technologies: Technology[] = [
