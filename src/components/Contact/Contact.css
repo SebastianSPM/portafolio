@@ -73,3 +73,15 @@
 .contact-form textarea:focus {
     border-color: #53B49E;
 }
+
+.valid-email {
+    color: green;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.invalid-email {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}

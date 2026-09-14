@@ -14,10 +14,13 @@ function Contact() {
     !email.trim() ||
     !message.trim();
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailValid = emailRegex.test(email);
+
     const submit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        if (formIncomplete) {
+        if(formIncomplete) {
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
@@ -26,7 +29,17 @@ function Contact() {
             return;
         }
 
-        if (sending) return;
+        
+        if(!emailValid){
+            Swal.fire({
+                icon: "error",
+                title: "Correo inválido",
+                text: "Por favor, introduce un correo válido."
+            });
+        }
+        
+
+        if(sending) return;
 
         setSending(true);
 
@@ -52,21 +65,14 @@ function Contact() {
                     title: "Oops...",
                     text: "Error al enviar el mensaje",
                 });
+                return false;
             }
 
             Swal.fire({
+                icon: "success",
                 title: "Mensaje enviado",
-                width: 600,
-                padding: "3em",
-                color: "#716add",
-                background: "#fff url(/images/trees.png)",
-                backdrop: `
-                    rgba(0,0,123,0.4)
-                    url("/images/nyan-cat.gif")
-                    left top
-                    no-repeat
-                `
-                });
+                text: "Gracias por ponerse en contacto."
+            });
 
             setName("");
             setEmail("");
@@ -94,10 +100,16 @@ function Contact() {
 
                 <div>
                     <input
-                        type="email"
                         placeholder="Email"
                         onChange={(e) => setEmail(e.target.value)}
                     />
+                    {
+                        email && (
+                            <p className={emailValid ? "valid-email" : "invalid-email"}>
+                                {emailValid ? "Correo válido" : "Correo no válido"}
+                            </p>
+                        )
+                    }
                 </div>
 
                 <div>
